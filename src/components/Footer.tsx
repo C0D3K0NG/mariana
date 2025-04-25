@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Shell, Starfish, Pearl, Fish } from 'lucide-react';
+import { Shell, Clover, Shell as PearlIcon, Fish } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -27,7 +27,7 @@ const Footer = () => {
         <Shell className="h-16 w-16" />
       </div>
       <div className="absolute bottom-10 right-10 text-white/10 animate-float" style={{ animationDelay: '1s' }}>
-        <Starfish className="h-12 w-12" />
+        <Clover className="h-12 w-12" />
       </div>
       <div className="absolute top-1/3 right-1/4 text-white/10 animate-swim-left">
         <Fish className="h-8 w-8" />
@@ -39,7 +39,7 @@ const Footer = () => {
             <a href="/" className="flex items-center gap-2">
               <div className="relative w-10 h-10">
                 <Shell className="h-10 w-10 text-white" />
-                <Pearl className="absolute top-1/2 left-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 text-marine-coral" />
+                <PearlIcon className="absolute top-1/2 left-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 text-marine-coral" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-white to-marine-coral bg-clip-text text-transparent">
                 Mariana
@@ -68,7 +68,7 @@ const Footer = () => {
           
           <div>
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <Starfish className="h-5 w-5 text-marine-coral" />
+              <Clover className="h-5 w-5 text-marine-coral" />
               Information
             </h3>
             <ul className="space-y-2">
@@ -84,7 +84,7 @@ const Footer = () => {
           
           <div>
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <Pearl className="h-5 w-5 text-marine-coral" />
+              <PearlIcon className="h-5 w-5 text-marine-coral" />
               Contact
             </h3>
             <ul className="space-y-3">

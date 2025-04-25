@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Shell, Starfish, Pearl } from 'lucide-react';
+import { Shell, Clover, Shell as PearlIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const NavigationBar = () => {
@@ -27,7 +27,7 @@ const NavigationBar = () => {
           <a href="/" className="flex items-center gap-2">
             <div className="relative w-10 h-10">
               <Shell className="h-10 w-10 text-marine-blue animate-float" />
-              <Pearl className="absolute top-1/2 left-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 text-marine-coral" />
+              <PearlIcon className="absolute top-1/2 left-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 text-marine-coral" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-marine-blue to-marine-coral bg-clip-text text-transparent">
               Mariana
@@ -39,10 +39,10 @@ const NavigationBar = () => {
           <NavLink href="#dive-in" icon={<Shell className="h-5 w-5" />}>
             Dive In
           </NavLink>
-          <NavLink href="#our-reefs" icon={<Starfish className="h-5 w-5" />}>
+          <NavLink href="#our-reefs" icon={<Clover className="h-5 w-5" />}>
             Our Reefs
           </NavLink>
-          <NavLink href="#marine-map" icon={<Pearl className="h-5 w-5" />}>
+          <NavLink href="#marine-map" icon={<Shell className="h-5 w-5 rotate-180" />}>
             Marine Map
           </NavLink>
           <NavLink href="#meet-the-fish" icon={<Shell className="h-5 w-5" />}>

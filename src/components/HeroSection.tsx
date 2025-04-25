@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { Pearl, Fish, ArrowRight } from 'lucide-react';
+import { Shell, Fish, ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   const [bubbles, setBubbles] = useState<{ id: number; size: number; left: string; animationDuration: number }[]>([]);
@@ -54,7 +54,6 @@ const HeroSection = () => {
             animationDuration: `${bubble.animationDuration}s`,
             bottom: '-10%',
           }}
-          css={{ animation: `bubble-rise ${bubble.animationDuration}s ease-in infinite` }}
         ></div>
       ))}
       
@@ -84,7 +83,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <button className="pearl-btn group animate-pulse">
               <div className="absolute inset-0 bg-white/50 rounded-full group-hover:animate-none"></div>
-              <Pearl className="h-6 w-6 text-marine-blue" />
+              <Shell className="h-6 w-6 text-marine-blue" />
               <span>Book Your Reef Adventure</span>
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>

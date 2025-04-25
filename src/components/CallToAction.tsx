@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Pearl, Shell, ArrowRight } from 'lucide-react';
+import { Shell, ArrowRight } from 'lucide-react';
 
 const CallToAction = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -114,7 +114,7 @@ const CallToAction = () => {
               {/* CTA buttons */}
               <div>
                 <button className="pearl-btn group mx-auto">
-                  <Pearl className="h-6 w-6 text-marine-coral-dark" />
+                  <Shell className="h-6 w-6 text-marine-coral-dark" />
                   <span>Book Your Reef Adventure</span>
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </button>
